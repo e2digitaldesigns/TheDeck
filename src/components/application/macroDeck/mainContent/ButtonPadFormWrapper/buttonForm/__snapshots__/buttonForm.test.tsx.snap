@@ -1,0 +1,230 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ButtonForm/> Should render without errors 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <form
+        class="sc-jRQBWg jyCeeA"
+      >
+        <fieldset
+          class="sc-bdvvtL sc-gKclnd Smgns fzBRvr"
+        >
+          <div>
+            <label
+              for="text"
+            >
+              Text:
+            </label>
+            <input
+              class="sc-gsDKAQ sc-iCfMLu dEgDrl kUuFGE"
+              data-testid="button_form__text-field-text"
+              name="text"
+              type="text"
+              value="Working"
+            />
+            <input
+              data-testid="button_form__text-field-text-color"
+              name="textColor"
+              type="color"
+              value="#cccccc"
+            />
+          </div>
+          <div>
+            <label
+              for="icon"
+            >
+              Icon:
+            </label>
+            <input
+              class="sc-gsDKAQ sc-iCfMLu dEgDrl kUuFGE"
+              data-testid="button_form__text-field-icon"
+              readonly=""
+              type="text"
+              value="Image"
+            />
+            <input
+              name="iconColor"
+              type="color"
+              value="#cccccc"
+            />
+          </div>
+          <div>
+            <label
+              for="bgColor"
+            >
+              BG Color:
+            </label>
+            <input
+              class="sc-pVTFL vgiIg"
+              data-testid="button_form__bg-color"
+              name="bgColor"
+              type="color"
+              value="#555555"
+            />
+          </div>
+        </fieldset>
+        <div>
+          <button
+            class="sc-hKwDye sc-jrQzAO PLLBx dgZkmA"
+            data-testid="button_form__submit"
+            disabled=""
+          >
+            Save
+          </button>
+          <button
+            class="sc-hKwDye sc-jrQzAO PLLBx dgZkmA"
+            data-testid="button_form__revert"
+            disabled=""
+          >
+            Revert to Saved
+          </button>
+          <button
+            class="sc-hKwDye sc-jrQzAO PLLBx dgZkmA"
+            data-testid="button_form__reset"
+          >
+            Reset to Default
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>,
+  "container": <div>
+    <form
+      class="sc-jRQBWg jyCeeA"
+    >
+      <fieldset
+        class="sc-bdvvtL sc-gKclnd Smgns fzBRvr"
+      >
+        <div>
+          <label
+            for="text"
+          >
+            Text:
+          </label>
+          <input
+            class="sc-gsDKAQ sc-iCfMLu dEgDrl kUuFGE"
+            data-testid="button_form__text-field-text"
+            name="text"
+            type="text"
+            value="Working"
+          />
+          <input
+            data-testid="button_form__text-field-text-color"
+            name="textColor"
+            type="color"
+            value="#cccccc"
+          />
+        </div>
+        <div>
+          <label
+            for="icon"
+          >
+            Icon:
+          </label>
+          <input
+            class="sc-gsDKAQ sc-iCfMLu dEgDrl kUuFGE"
+            data-testid="button_form__text-field-icon"
+            readonly=""
+            type="text"
+            value="Image"
+          />
+          <input
+            name="iconColor"
+            type="color"
+            value="#cccccc"
+          />
+        </div>
+        <div>
+          <label
+            for="bgColor"
+          >
+            BG Color:
+          </label>
+          <input
+            class="sc-pVTFL vgiIg"
+            data-testid="button_form__bg-color"
+            name="bgColor"
+            type="color"
+            value="#555555"
+          />
+        </div>
+      </fieldset>
+      <div>
+        <button
+          class="sc-hKwDye sc-jrQzAO PLLBx dgZkmA"
+          data-testid="button_form__submit"
+          disabled=""
+        >
+          Save
+        </button>
+        <button
+          class="sc-hKwDye sc-jrQzAO PLLBx dgZkmA"
+          data-testid="button_form__revert"
+          disabled=""
+        >
+          Revert to Saved
+        </button>
+        <button
+          class="sc-hKwDye sc-jrQzAO PLLBx dgZkmA"
+          data-testid="button_form__reset"
+        >
+          Reset to Default
+        </button>
+      </div>
+    </form>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

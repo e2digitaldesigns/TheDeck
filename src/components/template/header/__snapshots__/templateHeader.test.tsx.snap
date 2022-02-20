@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TemplateHeader/> Should render without errors 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header
+        class="sc-bdvvtL eRSWHu"
+        data-testid="template_header__component"
+      >
+        <ul
+          class="sc-gsDKAQ flTsWI"
+          data-testid="template_header__menu"
+        >
+          <li>
+            <a
+              href="#/home"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#/macroDeck"
+            >
+              MacroDeck
+            </a>
+          </li>
+          <li>
+            <a
+              href="#/settings"
+            >
+              Settings
+            </a>
+          </li>
+        </ul>
+        <ul
+          class="sc-gsDKAQ sc-dkPtRN flTsWI iyrmlI"
+          data-testid="template_header__options"
+        >
+          <li
+            data-testid="template_header__minimize-button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 13H5v-2h14v2z"
+              />
+            </svg>
+          </li>
+          <li
+            data-testid="template_header__fs-button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"
+              />
+            </svg>
+          </li>
+          <li
+            data-testid="template_header__close-button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </li>
+        </ul>
+      </header>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="sc-bdvvtL eRSWHu"
+      data-testid="template_header__component"
+    >
+      <ul
+        class="sc-gsDKAQ flTsWI"
+        data-testid="template_header__menu"
+      >
+        <li>
+          <a
+            href="#/home"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="#/macroDeck"
+          >
+            MacroDeck
+          </a>
+        </li>
+        <li>
+          <a
+            href="#/settings"
+          >
+            Settings
+          </a>
+        </li>
+      </ul>
+      <ul
+        class="sc-gsDKAQ sc-dkPtRN flTsWI iyrmlI"
+        data-testid="template_header__options"
+      >
+        <li
+          data-testid="template_header__minimize-button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 13H5v-2h14v2z"
+            />
+          </svg>
+        </li>
+        <li
+          data-testid="template_header__fs-button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"
+            />
+          </svg>
+        </li>
+        <li
+          data-testid="template_header__close-button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+            />
+          </svg>
+        </li>
+      </ul>
+    </header>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
