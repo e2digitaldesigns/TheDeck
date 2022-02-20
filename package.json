@@ -68,7 +68,6 @@
     "dist": "electron-builder",
     "eject": "react-scripts eject",
     "pack": "electron-builder --dir",
-    "postbuild": "cpx build/** electron/build && rimraf build",
     "postinstall": "electron-builder install-app-deps",
     "rebuild": "npm rebuild --runtime=electron --target=16.0.7 --disturl=https://atom.io/download/atom-shell --abi=99",
     "start": "react-scripts start .",

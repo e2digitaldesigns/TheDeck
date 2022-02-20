@@ -5,3 +5,14 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/e2digitaldesigns/TheDeck.git
 git push -u origin main
+
+Electron Builder Action
+https://github.com/marketplace/actions/electron-builder-action
+
+
+"postbuild": "cpx build/** electron/build",
+
+      - name: Unit Tests
+        run: npm run test --coverage
+        - name: Create React Build
+        run: npm run build

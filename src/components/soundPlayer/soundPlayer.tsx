@@ -35,6 +35,8 @@ const SoundPlayer: React.FC = () => {
     return () => {
       ipcRenderer.removeAllListeners(IpcRendererTypes.mdPlaySound);
     };
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return <div />;

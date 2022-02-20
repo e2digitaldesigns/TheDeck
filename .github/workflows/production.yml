@@ -22,9 +22,5 @@ jobs:
         run: sudo apt-get install libxtst-dev libpng++-dev
       - name: NPM Install
         run: npm install
-      - name: Unit Tests
-        run: npm run test --coverage
-      - name: Create React Build
-        run: npm run build
       - name: Create Electron Build
         run: npm run dist
