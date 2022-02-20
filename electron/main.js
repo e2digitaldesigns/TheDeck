@@ -44,6 +44,7 @@ electronApp.on("ready", () => {
   });
 
   mainWindow.setAspectRatio(width / height);
+
   // mainWindow.loadURL(
   //   isDev ? SETTINGS.LOAD_URL.LOCAL : `${__dirname}/${SETTINGS.LOAD_URL.BUILD}`
   // );
