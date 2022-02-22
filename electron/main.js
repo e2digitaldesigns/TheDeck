@@ -49,9 +49,10 @@ electronApp.on("ready", () => {
   //   isDev ? SETTINGS.LOAD_URL.LOCAL : `${__dirname}/${SETTINGS.LOAD_URL.BUILD}`
   // );
   // mainWindow.loadURL(SETTINGS.LOAD_URL.LOCAL);
-  // mainWindow.loadURL(`${__dirname}/${SETTINGS.LOAD_URL.BUILD}`);
 
-  mainWindow.loadURL("https://www.yahoo.com");
+  mainWindow.loadURL(`${__dirname}/${SETTINGS.LOAD_URL.BUILD}`);
+
+  // mainWindow.loadURL("https://www.yahoo.com");
 
   mainWindow.once("ready-to-show", () => mainWindow.show());
 

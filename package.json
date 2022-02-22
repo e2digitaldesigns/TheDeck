@@ -119,6 +119,7 @@
     "concurrently": "^7.0.0",
     "electron": "^16.0.7",
     "electron-builder": "^22.14.5",
+    "electron-rebuild": "^3.2.7",
     "node-sass": "^7.0.1"
   }
 }
