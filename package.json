@@ -1,19 +1,24 @@
 {
   "name": "thedeck",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Me",
   "description": "something",
   "private": true,
   "main": "./electron/main.js",
   "homepage": "./",
-  "npmRebuild": false,
   "build": {
     "asar": true,
     "extends": null,
     "appId": "com.macrodeck",
     "mac": {
       "category": "your.app.category.type"
-    }
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "releaseType": "draft"
+      }
+    ]
   },
   "resolve": {
     "fallback": {
@@ -113,6 +118,7 @@
     "@types/uuid": "^8.3.4",
     "concurrently": "^7.0.0",
     "electron": "^16.0.7",
-    "electron-builder": "^22.14.5"
+    "electron-builder": "^22.14.5",
+    "node-sass": "^7.0.1"
   }
 }

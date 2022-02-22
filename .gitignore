@@ -1,6 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-/_help
 # dependencies
 /node_modules
 /.pnp
@@ -10,9 +9,10 @@
 /coverage
 
 # production
-/buildx
+/build
 /electron/build
 /dist
+/_help
 
 # misc
 .DS_Store

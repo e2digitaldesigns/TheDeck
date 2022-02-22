@@ -19,3 +19,7 @@ https://github.com/marketplace/actions/electron-builder-action
 
 
 https://github.com/electron-userland/electron-builder/issues/5015
+
+
+
+https://stackoverflow.com/questions/57946173/github-actions-run-step-on-specific-os
