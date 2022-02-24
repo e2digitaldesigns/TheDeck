@@ -10,7 +10,7 @@
 
 # production
 /build
-/electron/build
+/electron/building
 /dist
 /_help
 

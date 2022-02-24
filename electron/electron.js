@@ -9,7 +9,7 @@ const storage = require("electron-json-storage");
 const SETTINGS = require("./settings/system.json");
 
 console.log(20, storage.getDataPath());
-const isDev = process?.env?.APP_DEV ? true : false;
+var isDev = process.env.APP_DEV ? true : false;
 console.log(13, { isDev });
 
 const { app: electronApp, BrowserWindow, ipcMain, Menu, Tray } = electron;
@@ -20,7 +20,7 @@ const width = SETTINGS.APPLICATION.SIZE.WIDTH;
 const height = SETTINGS.APPLICATION.SIZE.HEIGHT;
 
 electronApp.on("ready", () => {
-  tray = new Tray(__dirname + SETTINGS.LOGOS.SMALL);
+  tray = new Tray(__dirname + "/" + SETTINGS.LOGOS.SMALL);
   tray.setToolTip(SETTINGS.TRAY.TOOLTIP);
 
   mainWindow = new BrowserWindow({
@@ -34,25 +34,24 @@ electronApp.on("ready", () => {
     movable: true,
     minimizable: true,
     maximizable: true,
-    icon: __dirname + SETTINGS.LOGOS.SMALL,
-    show: false,
+    icon: __dirname + "/" + SETTINGS.LOGOS.SMALL,
     webPreferences: {
       contextIsolation: false,
-      devTools: isDev,
       nodeIntegration: true,
-      preload: __dirname + SETTINGS.SCRIPTS.PRELOAD,
+      preload: __dirname + "/" + SETTINGS.SCRIPTS.PRELOAD,
       webSecurity: false
     }
   });
 
   mainWindow.setAspectRatio(width / height);
-  // mainWindow.loadFile(`${__dirname}/build/index.html`);
+  mainWindow.loadFile("../build/index.html");
 
-  if (isDev) {
-    mainWindow.loadURL(SETTINGS.LOAD_URL.LOCAL);
-  } else {
-    mainWindow.loadFile(`${__dirname}${SETTINGS.LOAD_URL.BUILD}`);
-  }
+  // if (isDev) {
+  //   mainWindow.loadURL(SETTINGS.LOAD_URL.LOCAL);
+  // } else {
+  //   // mainWindow.loadFile(SETTINGS.LOAD_URL.BUILD);
+
+  // }
 
   mainWindow.once("ready-to-show", () => mainWindow.show());
 
@@ -62,7 +61,7 @@ electronApp.on("ready", () => {
     const template = [
       {
         label: SETTINGS.TRAY.TOOLTIP,
-        icon: __dirname + SETTINGS.LOGOS.SMALL,
+        icon: __dirname + "/" + SETTINGS.LOGOS.SMALL,
         enabled: false
       },
       {

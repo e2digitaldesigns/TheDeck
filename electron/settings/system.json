@@ -6,13 +6,13 @@
   },
   "DEFAULT_PORT": "8585",
   "LOAD_URL": {
-    "BUILD": "../build/index.html",
+    "BUILD": "/build/index.html",
     "LOCAL": "http://localhost:9001"
   },
   "LOGOS": {
-    "SMALL": "logo-128x128.png"
+    "SMALL": "/images/logo-128x128.png"
   },
-  "SCRIPTS": { "PRELOAD": "preload.js" },
+  "SCRIPTS": { "PRELOAD": "/preload.js" },
   "TRAY": {
     "TOOLTIP": "MacroDeck"
   }
