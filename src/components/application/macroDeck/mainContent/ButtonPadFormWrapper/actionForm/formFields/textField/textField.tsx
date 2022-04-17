@@ -5,7 +5,7 @@ import { TextField } from "../../../../../../../../theme";
 
 export interface IntFormFieldTextProps {
   name: string;
-  onChange: (e: any) => void;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   state: IntActions;
 }
 

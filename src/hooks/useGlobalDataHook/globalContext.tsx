@@ -8,9 +8,14 @@ export const defaultState: IntGlobalContextInterface = {
     ipAddress: "",
     port: "",
     features: {
-      obs: {},
+      obs: {
+        status: false,
+        ipAddress: "",
+        port: "",
+        password: ""
+      },
       twitch: {
-        status: "",
+        status: false,
         channel: "icon33"
       }
     }

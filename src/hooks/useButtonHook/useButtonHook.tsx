@@ -9,6 +9,7 @@ import { useObj } from "../../hooks";
 import { idGenerator } from "../../utils";
 
 import {
+  ButtonPadGridCopyStateType,
   IntActions,
   IntAppData,
   IntButtonPads,
@@ -25,7 +26,7 @@ export interface IntUseButtonHook {
     pageId: string,
     buttonPadNumber: number
   ) => void;
-  createButtonPad: (padNumber: number, data?: any) => void;
+  createButtonPad: (padNumber: number, data?: { _id?: string }) => void;
   readButtonPad: (padNumber: number) => IntButtonPads | undefined;
   updateButtonPad: (data: IntButtonPads) => void;
   deleteButtonPad: (_id: string) => void;
@@ -35,7 +36,7 @@ export interface IntUseButtonHook {
   getActiveButtonIndex: () => number;
   pasteButtonPad: (
     buttonPad: IntButtonPads | undefined,
-    copyState: any
+    copyState: ButtonPadGridCopyStateType
   ) => void;
 }
 
@@ -192,6 +193,7 @@ const useButtonHook = (): IntUseButtonHook => {
       state.buttonPads,
       (f: IntButtonPads) => f._id === buttonPad._id && f.pageId === pageId
     );
+    if (index === -1) return;
 
     const style = _find(state.styles, (f: IntStyles) => f._id === styleId);
     if (!style) return;
@@ -220,11 +222,14 @@ const useButtonHook = (): IntUseButtonHook => {
 
     const originIndex = _findIndex(
       state.buttonPads,
-      (f: any) => f._id === originPad?._id
+      (f: IntButtonPads) => f._id === originPad?._id
     );
 
     const destinationIndex = destinationPad
-      ? _findIndex(state.buttonPads, (f: any) => f._id === destinationPad?._id)
+      ? _findIndex(
+          state.buttonPads,
+          (f: IntButtonPads) => f._id === destinationPad?._id
+        )
       : -1;
 
     if (originIndex > -1)
@@ -267,17 +272,27 @@ const useButtonHook = (): IntUseButtonHook => {
       (f: IntActions) => f.buttonPadId !== destinationCheck?._id
     );
 
-    const originAction = _filter(
-      state.actions,
-      (f: IntActions) => f.buttonPadId === originPad._id
-    );
+    // const originAction = _filter(
+    //   state.actions,
+    //   (f: IntActions) => f.buttonPadId === originPad._id
+    // );
 
-    _map(originAction, (action: any) => {
-      state.actions.push({
-        ...action,
-        _id: idGenerator(),
-        buttonPadId: newButtonPadId
-      });
+    // _map(originAction, (action: IntActions) => {
+    //   state.actions.push({
+    //     ...action,
+    //     _id: idGenerator(),
+    //     buttonPadId: newButtonPadId
+    //   });
+    // });
+
+    _filter(state.actions, (action: IntActions) => {
+      if (action.buttonPadId === originPad._id) {
+        state.actions.push({
+          ...action,
+          _id: idGenerator(),
+          buttonPadId: newButtonPadId
+        });
+      }
     });
 
     const buttonPad = { ...buttonPadObj(), ...attributes };
@@ -290,8 +305,8 @@ const useButtonHook = (): IntUseButtonHook => {
   };
 
   const pasteButtonPad: IntUseButtonHook["pasteButtonPad"] = (
-    buttonPad: any,
-    copyState: any
+    buttonPad: IntButtonPads | undefined,
+    copyState: ButtonPadGridCopyStateType
   ) => {
     if (!buttonPad || !copyState?.buttonPad) return;
     const appState: IntAppContextInterface = _cloneDeep(appData.appState);
@@ -299,7 +314,7 @@ const useButtonHook = (): IntUseButtonHook => {
 
     const buttonPadIndex = _findIndex(
       state.buttonPads,
-      (f: any) => f._id === buttonPad._id
+      (f: IntButtonPads) => f._id === buttonPad._id
     );
 
     state.buttonPads[buttonPadIndex] = {
@@ -331,17 +346,17 @@ const useButtonHook = (): IntUseButtonHook => {
   };
 
   return {
-    addStyleToButtonPad,
     activateButtonPad,
+    addStyleToButtonPad,
     createButtonPad,
-    readButtonPad,
+    deleteButtonPad,
     getActiveButton,
     getActiveButtonIndex,
-    updateButtonPad,
-    deleteButtonPad,
     overWriteButtonPad,
+    pasteButtonPad,
+    readButtonPad,
     swapButtonPad,
-    pasteButtonPad
+    updateButtonPad
   };
 };
 

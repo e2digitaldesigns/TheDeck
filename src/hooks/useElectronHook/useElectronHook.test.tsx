@@ -9,6 +9,7 @@ import {
 } from "./../../types";
 
 const mock = { ipcRendererSender: jest.fn() };
+// ipcRenderer.IpcMessageEvent
 
 jest.mock("./window", () => ({
   window: {

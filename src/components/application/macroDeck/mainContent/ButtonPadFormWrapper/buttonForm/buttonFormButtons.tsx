@@ -3,17 +3,21 @@ import { useButton } from "../../../../../../hooks";
 import * as Styled from "./buttonForm.styles";
 import _isEqual from "lodash/isEqual";
 
+import { IntButtonPads } from "../../../../../../types";
 export interface IntButtonFormButtons {
-  defaultElements: any;
+  defaultElements: Partial<IntButtonPads>;
   handleFormSubmit: (e: React.MouseEvent<HTMLElement>) => void;
   handleResetButtonDefault: (e: React.MouseEvent<HTMLElement>) => void;
   handleRevertButtonSaved: (e: React.MouseEvent<HTMLElement>) => void;
   isDisabled: boolean;
   isVisible: boolean;
-  state: any;
+  state: IntButtonPads;
 }
 
-const isDefaultMatch = (defaultElements: any, state: any) => {
+const isDefaultMatch = (
+  defaultElements: Partial<IntButtonPads>,
+  state: IntButtonPads
+) => {
   return _isEqual(defaultElements, {
     textColor: state.textColor,
     iconColor: state.iconColor,
@@ -40,7 +44,7 @@ const ButtonFormButtons: React.FC<IntButtonFormButtons> = ({
 
   const isSaveDisabled = _isEqual(state, buttonPad) || isDisabled;
 
-  if (!isVisible) return <div data-testid="button_form_buttons__submit" />;
+  if (!isVisible) return <div data-testid="button_form_buttons__submit_null" />;
 
   return (
     <div>

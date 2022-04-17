@@ -4,7 +4,7 @@ import { IntActions } from "../../../../../../../../types/globalContextType";
 
 export interface IntFormFieldTextAreaProps {
   name: string;
-  onChange: (e: any) => void;
+  onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
   state: IntActions;
 }
 

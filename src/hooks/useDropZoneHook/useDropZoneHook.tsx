@@ -1,8 +1,9 @@
 import React from "react";
+import { IntDragAndDropData } from "../../types";
 import { DropZoneContext } from "./dropZoneContext";
 
 const useDropZone = () => {
-  const dropZone: any = React.useContext(DropZoneContext);
+  const dropZone: IntDragAndDropData = React.useContext(DropZoneContext);
   return dropZone;
 };
 

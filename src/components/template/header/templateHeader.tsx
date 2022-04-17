@@ -35,54 +35,52 @@ const TemplateHeader: React.FC<ITemplateHeader> = () => {
   };
 
   return (
-    <>
-      <Styled.Header data-testid="template_header__component">
-        <Styled.UL data-testid="template_header__menu">
-          <li>
-            <Link to={TYPES.SectionRoutes.Home}>Home</Link>
-          </li>
+    <Styled.Header data-testid="template_header__component">
+      <Styled.UL data-testid="template_header__menu">
+        <li>
+          <Link to={TYPES.SectionRoutes.Home}>Home</Link>
+        </li>
 
-          <li>
-            <Link to={TYPES.SectionRoutes.MacroDeck}>MacroDeck</Link>
-          </li>
+        <li>
+          <Link to={TYPES.SectionRoutes.MacroDeck}>MacroDeck</Link>
+        </li>
 
-          <li>
-            <Link to={TYPES.SectionRoutes.Settings}>Settings</Link>
-          </li>
-        </Styled.UL>
+        <li>
+          <Link to={TYPES.SectionRoutes.Settings}>Settings</Link>
+        </li>
+      </Styled.UL>
 
-        <Styled.ULRight data-testid="template_header__options">
+      <Styled.ULRight data-testid="template_header__options">
+        <li
+          data-testid="template_header__minimize-button"
+          onClick={handleMinimizeApplication}
+        >
+          <Remove />
+        </li>
+
+        {fullScreenState ? (
           <li
-            data-testid="template_header__minimize-button"
-            onClick={handleMinimizeApplication}
+            data-testid="template_header__fs-exit-button"
+            onClick={() => handleFullScreenToggle(false)}
           >
-            <Remove />
+            <FullscreenExit />
           </li>
-
-          {fullScreenState ? (
-            <li
-              data-testid="template_header__fs-exit-button"
-              onClick={() => handleFullScreenToggle(false)}
-            >
-              <FullscreenExit />
-            </li>
-          ) : (
-            <li
-              data-testid="template_header__fs-button"
-              onClick={() => handleFullScreenToggle(true)}
-            >
-              <Fullscreen fontSize="inherit" />
-            </li>
-          )}
+        ) : (
           <li
-            data-testid="template_header__close-button"
-            onClick={handleCloseApplication}
+            data-testid="template_header__fs-button"
+            onClick={() => handleFullScreenToggle(true)}
           >
-            <Close />
+            <Fullscreen fontSize="inherit" />
           </li>
-        </Styled.ULRight>
-      </Styled.Header>
-    </>
+        )}
+        <li
+          data-testid="template_header__close-button"
+          onClick={handleCloseApplication}
+        >
+          <Close />
+        </li>
+      </Styled.ULRight>
+    </Styled.Header>
   );
 };
 

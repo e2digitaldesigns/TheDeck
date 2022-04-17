@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-gsDKAQ dojDCw"
+        class="sc-gsDKAQ gLKvzA"
         data-testid="button_pad_parser__button-inner"
         draggable="true"
       >
@@ -106,6 +106,7 @@ Object {
         <div
           class="sc-iCfMLu edopZs"
           color="#cccccc"
+          data-testid="button_pad_parser__text"
         >
           Working
         </div>
@@ -114,7 +115,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-gsDKAQ dojDCw"
+      class="sc-gsDKAQ gLKvzA"
       data-testid="button_pad_parser__button-inner"
       draggable="true"
     >
@@ -214,6 +215,7 @@ Object {
       <div
         class="sc-iCfMLu edopZs"
         color="#cccccc"
+        data-testid="button_pad_parser__text"
       >
         Working
       </div>

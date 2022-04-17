@@ -45,6 +45,7 @@ Object {
               value="Image"
             />
             <input
+              data-testid="button_form__icon-color"
               name="iconColor"
               type="color"
               value="#cccccc"
@@ -131,6 +132,7 @@ Object {
             value="Image"
           />
           <input
+            data-testid="button_form__icon-color"
             name="iconColor"
             type="color"
             value="#cccccc"

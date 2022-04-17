@@ -5,15 +5,2003 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <h1>
-        ddd
-      </h1>
+      <div
+        class="sc-bdvvtL cIRryp"
+      >
+        <div />
+        <div
+          class="sc-gsDKAQ sc-dkPtRN cPSMIN"
+        >
+          <div
+            class="sc-eCImPb fyMlBk"
+            data-testid="sidebar_header__component"
+          >
+            <div
+              class="sc-jRQBWg hafZAN"
+            >
+              <div
+                class="sc-gKclnd ewaCGI"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm-1 4l6 6v10c0 1.1-.9 2-2 2H7.99C6.89 23 6 22.1 6 21l.01-14c0-1.1.89-2 1.99-2h7zm-1 7h5.5L14 6.5V12z"
+                  />
+                </svg>
+              </div>
+              <div>
+                PROFILES
+                 (
+                <span
+                  data-testid="sidebar-header__profile-count"
+                >
+                  2
+                </span>
+                )
+              </div>
+              <div
+                class="sc-gKclnd sc-iCfMLu ewaCGI beDUKi"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                  data-testid="sidebar-header__new-profile-button"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="profile-search-wrapper"
+            />
+          </div>
+          <div
+            class="sc-egiyK eJUQSE"
+          >
+            <div
+              class="sc-crHmcD sc-bqiRlB hEpKuX fIQWoN"
+            >
+              <div
+                class="sc-furwcr hjejuY"
+                data-testid="side_bar_item__component"
+                draggable="true"
+              >
+                <div
+                  data-testid="side_bar_item__profile-name"
+                >
+                  New Profile
+                   (
+                  15
+                  )
+                </div>
+                <div
+                  data-testid="side_bar_item__profile-activate"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  data-testid="side_bar_item__profile-delete"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="sc-furwcr hjejuY"
+                data-testid="side_bar_item__component"
+                draggable="true"
+              >
+                <div
+                  data-testid="side_bar_item__profile-name"
+                >
+                  Sound Board
+                   (
+                  12
+                  )
+                </div>
+                <div
+                  data-testid="side_bar_item__profile-activate"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  data-testid="side_bar_item__profile-delete"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-ksdxgE kfFZci"
+            data-testid="sidebar_style_header__component"
+          >
+            <div
+              class="sc-hBUSln bxnaTg"
+            >
+              <div
+                class="sc-fotOHu jBLXHa"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm-1 4l6 6v10c0 1.1-.9 2-2 2H7.99C6.89 23 6 22.1 6 21l.01-14c0-1.1.89-2 1.99-2h7zm-1 7h5.5L14 6.5V12z"
+                  />
+                </svg>
+              </div>
+              <div>
+                STYLES
+                 (
+                <span
+                  data-testid="sidebar_style_header__style-count"
+                >
+                  4
+                </span>
+                )
+              </div>
+              <div
+                class="sc-fotOHu sc-fFeiMQ jBLXHa faXTeW"
+              />
+            </div>
+            <div
+              class="sc-bkkeKt jchZmp"
+              data-testid="sidebar_style_header__drop-zone"
+            >
+              Drop Pad Here! 
+              <br />
+              to save button style...
+            </div>
+          </div>
+          <div
+            class="sc-egiyK iPCEsN"
+            height="12em"
+          >
+            <div
+              class="sc-crHmcD sc-bqiRlB hEpKuX fIQWoN"
+            >
+              <div
+                class="sc-ieecCq fCEyJx"
+                draggable="true"
+              >
+                <a
+                  class="sc-dJjYzT crcTQx"
+                >
+                  <svg
+                    data-testid="icon-Grid"
+                    fill="none"
+                    height="12"
+                    stroke="#aaaaaa"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      height="7"
+                      width="7"
+                      x="3"
+                      y="3"
+                    />
+                    <rect
+                      height="7"
+                      width="7"
+                      x="14"
+                      y="3"
+                    />
+                    <rect
+                      height="7"
+                      width="7"
+                      x="14"
+                      y="14"
+                    />
+                    <rect
+                      height="7"
+                      width="7"
+                      x="3"
+                      y="14"
+                    />
+                  </svg>
+                </a>
+                <svg
+                  data-testid="icon-Twitch"
+                  fill="none"
+                  height="12"
+                  stroke="#ffffff"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7"
+                  />
+                </svg>
+                <svg
+                  data-testid="icon-PenTool"
+                  fill="none"
+                  height="12"
+                  stroke="#eeeeee"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 19l7-7 3 3-7 7-3-3z"
+                  />
+                  <path
+                    d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"
+                  />
+                  <path
+                    d="M2 2l7.586 7.586"
+                  />
+                  <circle
+                    cx="11"
+                    cy="11"
+                    r="2"
+                  />
+                </svg>
+                <svg
+                  data-testid="icon-Circle"
+                  fill="none"
+                  height="12"
+                  stroke="#9147ff"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                  />
+                </svg>
+                <a
+                  class="sc-hGPBjI bRoAzb"
+                >
+                  <svg
+                    data-testid="icon-Trash"
+                    fill="none"
+                    height="12"
+                    stroke="#aaaaaa"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <polyline
+                      points="3 6 5 6 21 6"
+                    />
+                    <path
+                      d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="sc-ieecCq fCEyJx"
+                draggable="true"
+              >
+                <a
+                  class="sc-dJjYzT crcTQx"
+                >
+                  <svg
+                    data-testid="icon-Grid"
+                    fill="none"
+                    height="12"
+                    stroke="#aaaaaa"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      height="7"
+                      width="7"
+                      x="3"
+                      y="3"
+                    />
+                    <rect
+                      height="7"
+                      width="7"
+                      x="14"
+                      y="3"
+                    />
+                    <rect
+                      height="7"
+                      width="7"
+                      x="14"
+                      y="14"
+                    />
+                    <rect
+                      height="7"
+                      width="7"
+                      x="3"
+                      y="14"
+                    />
+                  </svg>
+                </a>
+                <svg
+                  data-testid="icon-PlayCircle"
+                  fill="none"
+                  height="12"
+                  stroke="#ffffff"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                  />
+                  <polygon
+                    points="10 8 16 12 10 16 10 8"
+                  />
+                </svg>
+                <svg
+                  data-testid="icon-PenTool"
+                  fill="none"
+                  height="12"
+                  stroke="#eeeeee"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 19l7-7 3 3-7 7-3-3z"
+                  />
+                  <path
+                    d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"
+                  />
+                  <path
+                    d="M2 2l7.586 7.586"
+                  />
+                  <circle
+                    cx="11"
+                    cy="11"
+                    r="2"
+                  />
+                </svg>
+                <svg
+                  data-testid="icon-Circle"
+                  fill="none"
+                  height="12"
+                  stroke="#ff0000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                  />
+                </svg>
+                <a
+                  class="sc-hGPBjI bRoAzb"
+                >
+                  <svg
+                    data-testid="icon-Trash"
+                    fill="none"
+                    height="12"
+                    stroke="#aaaaaa"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <polyline
+                      points="3 6 5 6 21 6"
+                    />
+                    <path
+                      d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="sc-ieecCq fCEyJx"
+                draggable="true"
+              >
+                <a
+                  class="sc-dJjYzT crcTQx"
+                >
+                  <svg
+                    data-testid="icon-Grid"
+                    fill="none"
+                    height="12"
+                    stroke="#aaaaaa"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      height="7"
+                      width="7"
+                      x="3"
+                      y="3"
+                    />
+                    <rect
+                      height="7"
+                      width="7"
+                      x="14"
+                      y="3"
+                    />
+                    <rect
+                      height="7"
+                      width="7"
+                      x="14"
+                      y="14"
+                    />
+                    <rect
+                      height="7"
+                      width="7"
+                      x="3"
+                      y="14"
+                    />
+                  </svg>
+                </a>
+                <svg
+                  data-testid="icon-Image"
+                  fill="none"
+                  height="12"
+                  stroke="#cccccc"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    height="18"
+                    rx="2"
+                    ry="2"
+                    width="18"
+                    x="3"
+                    y="3"
+                  />
+                  <circle
+                    cx="8.5"
+                    cy="8.5"
+                    r="1.5"
+                  />
+                  <polyline
+                    points="21 15 16 10 5 21"
+                  />
+                </svg>
+                <svg
+                  data-testid="icon-PenTool"
+                  fill="none"
+                  height="12"
+                  stroke="#cccccc"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 19l7-7 3 3-7 7-3-3z"
+                  />
+                  <path
+                    d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"
+                  />
+                  <path
+                    d="M2 2l7.586 7.586"
+                  />
+                  <circle
+                    cx="11"
+                    cy="11"
+                    r="2"
+                  />
+                </svg>
+                <svg
+                  data-testid="icon-Circle"
+                  fill="none"
+                  height="12"
+                  stroke="#555555"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                  />
+                </svg>
+                <a
+                  class="sc-hGPBjI bRoAzb"
+                >
+                  <svg
+                    data-testid="icon-Trash"
+                    fill="none"
+                    height="12"
+                    stroke="#aaaaaa"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <polyline
+                      points="3 6 5 6 21 6"
+                    />
+                    <path
+                      d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="sc-ieecCq fCEyJx"
+                draggable="true"
+              >
+                <a
+                  class="sc-dJjYzT crcTQx"
+                >
+                  <svg
+                    data-testid="icon-Grid"
+                    fill="none"
+                    height="12"
+                    stroke="#aaaaaa"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      height="7"
+                      width="7"
+                      x="3"
+                      y="3"
+                    />
+                    <rect
+                      height="7"
+                      width="7"
+                      x="14"
+                      y="3"
+                    />
+                    <rect
+                      height="7"
+                      width="7"
+                      x="14"
+                      y="14"
+                    />
+                    <rect
+                      height="7"
+                      width="7"
+                      x="3"
+                      y="14"
+                    />
+                  </svg>
+                </a>
+                <svg
+                  data-testid="icon-Music"
+                  fill="none"
+                  height="12"
+                  stroke="#ffffff"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 18V5l12-2v13"
+                  />
+                  <circle
+                    cx="6"
+                    cy="18"
+                    r="3"
+                  />
+                  <circle
+                    cx="18"
+                    cy="16"
+                    r="3"
+                  />
+                </svg>
+                <svg
+                  data-testid="icon-PenTool"
+                  fill="none"
+                  height="12"
+                  stroke="#cccccc"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 19l7-7 3 3-7 7-3-3z"
+                  />
+                  <path
+                    d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"
+                  />
+                  <path
+                    d="M2 2l7.586 7.586"
+                  />
+                  <circle
+                    cx="11"
+                    cy="11"
+                    r="2"
+                  />
+                </svg>
+                <svg
+                  data-testid="icon-Circle"
+                  fill="none"
+                  height="12"
+                  stroke="#670b89"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                  />
+                </svg>
+                <a
+                  class="sc-hGPBjI bRoAzb"
+                >
+                  <svg
+                    data-testid="icon-Trash"
+                    fill="none"
+                    height="12"
+                    stroke="#aaaaaa"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <polyline
+                      points="3 6 5 6 21 6"
+                    />
+                    <path
+                      d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div />
+        <div
+          class="sc-gsDKAQ sc-hKwDye cPSMIN kehIRr"
+        >
+          <div
+            data-testid="button_pad_grid__null"
+          />
+          <div
+            data-testid="profile_options__not-loaded"
+          />
+          <div
+            class="sc-faUpoM bMdREk"
+          >
+            <div>
+              <form
+                class="sc-hUpaCq hxyEtt"
+              >
+                <fieldset
+                  class="sc-pVTFL sc-jgrJph iwZGGq emazDn"
+                >
+                  <div>
+                    <label
+                      for="text"
+                    >
+                      Text:
+                    </label>
+                    <input
+                      class="sc-jrQzAO sc-gSQFLo QuLDf irQcTs"
+                      data-testid="button_form__text-field-text"
+                      disabled=""
+                      name="text"
+                      type="text"
+                      value="ButtonPad"
+                    />
+                    <input
+                      data-testid="button_form__text-field-text-color"
+                      disabled=""
+                      name="textColor"
+                      type="color"
+                      value="#eeeeee"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="icon"
+                    >
+                      Icon:
+                    </label>
+                    <input
+                      class="sc-jrQzAO sc-gSQFLo QuLDf irQcTs"
+                      data-testid="button_form__text-field-icon"
+                      readonly=""
+                      type="text"
+                      value="Image"
+                    />
+                    <input
+                      data-testid="button_form__icon-color"
+                      disabled=""
+                      name="iconColor"
+                      type="color"
+                      value="#ffffff"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="bgColor"
+                    >
+                      BG Color:
+                    </label>
+                    <input
+                      class="sc-iNGGcK dVfrqj"
+                      data-testid="button_form__bg-color"
+                      disabled=""
+                      name="bgColor"
+                      type="color"
+                      value="#333333"
+                    />
+                  </div>
+                </fieldset>
+                <div>
+                  <button
+                    class="sc-iqseJM sc-jeraig cwAHbI ibLQvb"
+                    data-testid="button_form__submit"
+                    disabled=""
+                  >
+                    Save
+                  </button>
+                  <button
+                    class="sc-iqseJM sc-jeraig cwAHbI ibLQvb"
+                    data-testid="button_form__revert"
+                    disabled=""
+                  >
+                    Revert to Saved
+                  </button>
+                  <button
+                    class="sc-iqseJM sc-jeraig cwAHbI ibLQvb"
+                    data-testid="button_form__reset"
+                    disabled=""
+                  >
+                    Reset to Default
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div>
+              <div
+                class="sc-jObWnj cIBzzc"
+              >
+                <div
+                  class="sc-crHmcD sc-dPiLbb hEpKuX gGnZaw"
+                >
+                  <ul />
+                </div>
+              </div>
+              <button
+                class="sc-iqseJM sc-khQegj cwAHbI iaNoul"
+                data-testid="action-list__action-item-new"
+                disabled=""
+              >
+                New Action
+              </button>
+            </div>
+            <div>
+              <fieldset
+                class="sc-pVTFL sc-efQSVx iwZGGq"
+              >
+                <div>
+                  <label
+                    for="action"
+                  >
+                    Action:
+                  </label>
+                  <select
+                    class="sc-kDTinF iNPzEE"
+                    data-testid="action-form__action"
+                    disabled=""
+                    name="action"
+                  >
+                    <option
+                      value="api"
+                    >
+                      API
+                    </option>
+                    <option
+                      value="delay"
+                    >
+                      Delay
+                    </option>
+                    <option
+                      value="exe"
+                    >
+                      Exe
+                    </option>
+                    <option
+                      value="keyTap"
+                    >
+                      KeyTap
+                    </option>
+                    <option
+                      value="md"
+                    >
+                      Macro Deck
+                    </option>
+                    <option
+                      value="obs"
+                    >
+                      OBS
+                    </option>
+                    <option
+                      value="sound"
+                    >
+                      Sound
+                    </option>
+                  </select>
+                </div>
+                <div>
+                  <label
+                    data-testid="form_field_selectField__label"
+                    for="md"
+                  >
+                    Md
+                    :
+                  </label>
+                  <select
+                    class="sc-kDTinF iNPzEE"
+                    data-testid="form_field_selectField__input"
+                    name="subAction"
+                  >
+                    <option
+                      data-testid="form_field_selectField__option-choose"
+                      value=""
+                    >
+                      Choose
+                    </option>
+                    <option
+                      data-testid="form_field_selectField__option"
+                      value="mdHome"
+                    >
+                      mdHome
+                    </option>
+                    <option
+                      data-testid="form_field_selectField__option"
+                      value="mdPage"
+                    >
+                      mdPage
+                    </option>
+                    <option
+                      data-testid="form_field_selectField__option"
+                      value="mdProfile"
+                    >
+                      mdProfile
+                    </option>
+                    <option
+                      data-testid="form_field_selectField__option"
+                      value="mdProfileSelector"
+                    >
+                      mdProfileSelector
+                    </option>
+                    <option
+                      data-testid="form_field_selectField__option"
+                      value="mdReset"
+                    >
+                      mdReset
+                    </option>
+                    <option
+                      data-testid="form_field_selectField__option"
+                      value="mdSettings"
+                    >
+                      mdSettings
+                    </option>
+                  </select>
+                </div>
+              </fieldset>
+              <button
+                class="sc-iqseJM sc-cTAqQK cwAHbI jlSooL"
+                data-testid="action-form__submit"
+                disabled=""
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+        <div />
+      </div>
     </div>
   </body>,
   "container": <div>
-    <h1>
-      ddd
-    </h1>
+    <div
+      class="sc-bdvvtL cIRryp"
+    >
+      <div />
+      <div
+        class="sc-gsDKAQ sc-dkPtRN cPSMIN"
+      >
+        <div
+          class="sc-eCImPb fyMlBk"
+          data-testid="sidebar_header__component"
+        >
+          <div
+            class="sc-jRQBWg hafZAN"
+          >
+            <div
+              class="sc-gKclnd ewaCGI"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm-1 4l6 6v10c0 1.1-.9 2-2 2H7.99C6.89 23 6 22.1 6 21l.01-14c0-1.1.89-2 1.99-2h7zm-1 7h5.5L14 6.5V12z"
+                />
+              </svg>
+            </div>
+            <div>
+              PROFILES
+               (
+              <span
+                data-testid="sidebar-header__profile-count"
+              >
+                2
+              </span>
+              )
+            </div>
+            <div
+              class="sc-gKclnd sc-iCfMLu ewaCGI beDUKi"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                data-testid="sidebar-header__new-profile-button"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            class="profile-search-wrapper"
+          />
+        </div>
+        <div
+          class="sc-egiyK eJUQSE"
+        >
+          <div
+            class="sc-crHmcD sc-bqiRlB hEpKuX fIQWoN"
+          >
+            <div
+              class="sc-furwcr hjejuY"
+              data-testid="side_bar_item__component"
+              draggable="true"
+            >
+              <div
+                data-testid="side_bar_item__profile-name"
+              >
+                New Profile
+                 (
+                15
+                )
+              </div>
+              <div
+                data-testid="side_bar_item__profile-activate"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                  />
+                </svg>
+              </div>
+              <div
+                data-testid="side_bar_item__profile-delete"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="sc-furwcr hjejuY"
+              data-testid="side_bar_item__component"
+              draggable="true"
+            >
+              <div
+                data-testid="side_bar_item__profile-name"
+              >
+                Sound Board
+                 (
+                12
+                )
+              </div>
+              <div
+                data-testid="side_bar_item__profile-activate"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                  />
+                </svg>
+              </div>
+              <div
+                data-testid="side_bar_item__profile-delete"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-ksdxgE kfFZci"
+          data-testid="sidebar_style_header__component"
+        >
+          <div
+            class="sc-hBUSln bxnaTg"
+          >
+            <div
+              class="sc-fotOHu jBLXHa"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm-1 4l6 6v10c0 1.1-.9 2-2 2H7.99C6.89 23 6 22.1 6 21l.01-14c0-1.1.89-2 1.99-2h7zm-1 7h5.5L14 6.5V12z"
+                />
+              </svg>
+            </div>
+            <div>
+              STYLES
+               (
+              <span
+                data-testid="sidebar_style_header__style-count"
+              >
+                4
+              </span>
+              )
+            </div>
+            <div
+              class="sc-fotOHu sc-fFeiMQ jBLXHa faXTeW"
+            />
+          </div>
+          <div
+            class="sc-bkkeKt jchZmp"
+            data-testid="sidebar_style_header__drop-zone"
+          >
+            Drop Pad Here! 
+            <br />
+            to save button style...
+          </div>
+        </div>
+        <div
+          class="sc-egiyK iPCEsN"
+          height="12em"
+        >
+          <div
+            class="sc-crHmcD sc-bqiRlB hEpKuX fIQWoN"
+          >
+            <div
+              class="sc-ieecCq fCEyJx"
+              draggable="true"
+            >
+              <a
+                class="sc-dJjYzT crcTQx"
+              >
+                <svg
+                  data-testid="icon-Grid"
+                  fill="none"
+                  height="12"
+                  stroke="#aaaaaa"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    height="7"
+                    width="7"
+                    x="3"
+                    y="3"
+                  />
+                  <rect
+                    height="7"
+                    width="7"
+                    x="14"
+                    y="3"
+                  />
+                  <rect
+                    height="7"
+                    width="7"
+                    x="14"
+                    y="14"
+                  />
+                  <rect
+                    height="7"
+                    width="7"
+                    x="3"
+                    y="14"
+                  />
+                </svg>
+              </a>
+              <svg
+                data-testid="icon-Twitch"
+                fill="none"
+                height="12"
+                stroke="#ffffff"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7"
+                />
+              </svg>
+              <svg
+                data-testid="icon-PenTool"
+                fill="none"
+                height="12"
+                stroke="#eeeeee"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 19l7-7 3 3-7 7-3-3z"
+                />
+                <path
+                  d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"
+                />
+                <path
+                  d="M2 2l7.586 7.586"
+                />
+                <circle
+                  cx="11"
+                  cy="11"
+                  r="2"
+                />
+              </svg>
+              <svg
+                data-testid="icon-Circle"
+                fill="none"
+                height="12"
+                stroke="#9147ff"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                />
+              </svg>
+              <a
+                class="sc-hGPBjI bRoAzb"
+              >
+                <svg
+                  data-testid="icon-Trash"
+                  fill="none"
+                  height="12"
+                  stroke="#aaaaaa"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    points="3 6 5 6 21 6"
+                  />
+                  <path
+                    d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div
+              class="sc-ieecCq fCEyJx"
+              draggable="true"
+            >
+              <a
+                class="sc-dJjYzT crcTQx"
+              >
+                <svg
+                  data-testid="icon-Grid"
+                  fill="none"
+                  height="12"
+                  stroke="#aaaaaa"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    height="7"
+                    width="7"
+                    x="3"
+                    y="3"
+                  />
+                  <rect
+                    height="7"
+                    width="7"
+                    x="14"
+                    y="3"
+                  />
+                  <rect
+                    height="7"
+                    width="7"
+                    x="14"
+                    y="14"
+                  />
+                  <rect
+                    height="7"
+                    width="7"
+                    x="3"
+                    y="14"
+                  />
+                </svg>
+              </a>
+              <svg
+                data-testid="icon-PlayCircle"
+                fill="none"
+                height="12"
+                stroke="#ffffff"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                />
+                <polygon
+                  points="10 8 16 12 10 16 10 8"
+                />
+              </svg>
+              <svg
+                data-testid="icon-PenTool"
+                fill="none"
+                height="12"
+                stroke="#eeeeee"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 19l7-7 3 3-7 7-3-3z"
+                />
+                <path
+                  d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"
+                />
+                <path
+                  d="M2 2l7.586 7.586"
+                />
+                <circle
+                  cx="11"
+                  cy="11"
+                  r="2"
+                />
+              </svg>
+              <svg
+                data-testid="icon-Circle"
+                fill="none"
+                height="12"
+                stroke="#ff0000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                />
+              </svg>
+              <a
+                class="sc-hGPBjI bRoAzb"
+              >
+                <svg
+                  data-testid="icon-Trash"
+                  fill="none"
+                  height="12"
+                  stroke="#aaaaaa"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    points="3 6 5 6 21 6"
+                  />
+                  <path
+                    d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div
+              class="sc-ieecCq fCEyJx"
+              draggable="true"
+            >
+              <a
+                class="sc-dJjYzT crcTQx"
+              >
+                <svg
+                  data-testid="icon-Grid"
+                  fill="none"
+                  height="12"
+                  stroke="#aaaaaa"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    height="7"
+                    width="7"
+                    x="3"
+                    y="3"
+                  />
+                  <rect
+                    height="7"
+                    width="7"
+                    x="14"
+                    y="3"
+                  />
+                  <rect
+                    height="7"
+                    width="7"
+                    x="14"
+                    y="14"
+                  />
+                  <rect
+                    height="7"
+                    width="7"
+                    x="3"
+                    y="14"
+                  />
+                </svg>
+              </a>
+              <svg
+                data-testid="icon-Image"
+                fill="none"
+                height="12"
+                stroke="#cccccc"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  height="18"
+                  rx="2"
+                  ry="2"
+                  width="18"
+                  x="3"
+                  y="3"
+                />
+                <circle
+                  cx="8.5"
+                  cy="8.5"
+                  r="1.5"
+                />
+                <polyline
+                  points="21 15 16 10 5 21"
+                />
+              </svg>
+              <svg
+                data-testid="icon-PenTool"
+                fill="none"
+                height="12"
+                stroke="#cccccc"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 19l7-7 3 3-7 7-3-3z"
+                />
+                <path
+                  d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"
+                />
+                <path
+                  d="M2 2l7.586 7.586"
+                />
+                <circle
+                  cx="11"
+                  cy="11"
+                  r="2"
+                />
+              </svg>
+              <svg
+                data-testid="icon-Circle"
+                fill="none"
+                height="12"
+                stroke="#555555"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                />
+              </svg>
+              <a
+                class="sc-hGPBjI bRoAzb"
+              >
+                <svg
+                  data-testid="icon-Trash"
+                  fill="none"
+                  height="12"
+                  stroke="#aaaaaa"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    points="3 6 5 6 21 6"
+                  />
+                  <path
+                    d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div
+              class="sc-ieecCq fCEyJx"
+              draggable="true"
+            >
+              <a
+                class="sc-dJjYzT crcTQx"
+              >
+                <svg
+                  data-testid="icon-Grid"
+                  fill="none"
+                  height="12"
+                  stroke="#aaaaaa"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    height="7"
+                    width="7"
+                    x="3"
+                    y="3"
+                  />
+                  <rect
+                    height="7"
+                    width="7"
+                    x="14"
+                    y="3"
+                  />
+                  <rect
+                    height="7"
+                    width="7"
+                    x="14"
+                    y="14"
+                  />
+                  <rect
+                    height="7"
+                    width="7"
+                    x="3"
+                    y="14"
+                  />
+                </svg>
+              </a>
+              <svg
+                data-testid="icon-Music"
+                fill="none"
+                height="12"
+                stroke="#ffffff"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 18V5l12-2v13"
+                />
+                <circle
+                  cx="6"
+                  cy="18"
+                  r="3"
+                />
+                <circle
+                  cx="18"
+                  cy="16"
+                  r="3"
+                />
+              </svg>
+              <svg
+                data-testid="icon-PenTool"
+                fill="none"
+                height="12"
+                stroke="#cccccc"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 19l7-7 3 3-7 7-3-3z"
+                />
+                <path
+                  d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"
+                />
+                <path
+                  d="M2 2l7.586 7.586"
+                />
+                <circle
+                  cx="11"
+                  cy="11"
+                  r="2"
+                />
+              </svg>
+              <svg
+                data-testid="icon-Circle"
+                fill="none"
+                height="12"
+                stroke="#670b89"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                />
+              </svg>
+              <a
+                class="sc-hGPBjI bRoAzb"
+              >
+                <svg
+                  data-testid="icon-Trash"
+                  fill="none"
+                  height="12"
+                  stroke="#aaaaaa"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    points="3 6 5 6 21 6"
+                  />
+                  <path
+                    d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div />
+      <div
+        class="sc-gsDKAQ sc-hKwDye cPSMIN kehIRr"
+      >
+        <div
+          data-testid="button_pad_grid__null"
+        />
+        <div
+          data-testid="profile_options__not-loaded"
+        />
+        <div
+          class="sc-faUpoM bMdREk"
+        >
+          <div>
+            <form
+              class="sc-hUpaCq hxyEtt"
+            >
+              <fieldset
+                class="sc-pVTFL sc-jgrJph iwZGGq emazDn"
+              >
+                <div>
+                  <label
+                    for="text"
+                  >
+                    Text:
+                  </label>
+                  <input
+                    class="sc-jrQzAO sc-gSQFLo QuLDf irQcTs"
+                    data-testid="button_form__text-field-text"
+                    disabled=""
+                    name="text"
+                    type="text"
+                    value="ButtonPad"
+                  />
+                  <input
+                    data-testid="button_form__text-field-text-color"
+                    disabled=""
+                    name="textColor"
+                    type="color"
+                    value="#eeeeee"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="icon"
+                  >
+                    Icon:
+                  </label>
+                  <input
+                    class="sc-jrQzAO sc-gSQFLo QuLDf irQcTs"
+                    data-testid="button_form__text-field-icon"
+                    readonly=""
+                    type="text"
+                    value="Image"
+                  />
+                  <input
+                    data-testid="button_form__icon-color"
+                    disabled=""
+                    name="iconColor"
+                    type="color"
+                    value="#ffffff"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="bgColor"
+                  >
+                    BG Color:
+                  </label>
+                  <input
+                    class="sc-iNGGcK dVfrqj"
+                    data-testid="button_form__bg-color"
+                    disabled=""
+                    name="bgColor"
+                    type="color"
+                    value="#333333"
+                  />
+                </div>
+              </fieldset>
+              <div>
+                <button
+                  class="sc-iqseJM sc-jeraig cwAHbI ibLQvb"
+                  data-testid="button_form__submit"
+                  disabled=""
+                >
+                  Save
+                </button>
+                <button
+                  class="sc-iqseJM sc-jeraig cwAHbI ibLQvb"
+                  data-testid="button_form__revert"
+                  disabled=""
+                >
+                  Revert to Saved
+                </button>
+                <button
+                  class="sc-iqseJM sc-jeraig cwAHbI ibLQvb"
+                  data-testid="button_form__reset"
+                  disabled=""
+                >
+                  Reset to Default
+                </button>
+              </div>
+            </form>
+          </div>
+          <div>
+            <div
+              class="sc-jObWnj cIBzzc"
+            >
+              <div
+                class="sc-crHmcD sc-dPiLbb hEpKuX gGnZaw"
+              >
+                <ul />
+              </div>
+            </div>
+            <button
+              class="sc-iqseJM sc-khQegj cwAHbI iaNoul"
+              data-testid="action-list__action-item-new"
+              disabled=""
+            >
+              New Action
+            </button>
+          </div>
+          <div>
+            <fieldset
+              class="sc-pVTFL sc-efQSVx iwZGGq"
+            >
+              <div>
+                <label
+                  for="action"
+                >
+                  Action:
+                </label>
+                <select
+                  class="sc-kDTinF iNPzEE"
+                  data-testid="action-form__action"
+                  disabled=""
+                  name="action"
+                >
+                  <option
+                    value="api"
+                  >
+                    API
+                  </option>
+                  <option
+                    value="delay"
+                  >
+                    Delay
+                  </option>
+                  <option
+                    value="exe"
+                  >
+                    Exe
+                  </option>
+                  <option
+                    value="keyTap"
+                  >
+                    KeyTap
+                  </option>
+                  <option
+                    value="md"
+                  >
+                    Macro Deck
+                  </option>
+                  <option
+                    value="obs"
+                  >
+                    OBS
+                  </option>
+                  <option
+                    value="sound"
+                  >
+                    Sound
+                  </option>
+                </select>
+              </div>
+              <div>
+                <label
+                  data-testid="form_field_selectField__label"
+                  for="md"
+                >
+                  Md
+                  :
+                </label>
+                <select
+                  class="sc-kDTinF iNPzEE"
+                  data-testid="form_field_selectField__input"
+                  name="subAction"
+                >
+                  <option
+                    data-testid="form_field_selectField__option-choose"
+                    value=""
+                  >
+                    Choose
+                  </option>
+                  <option
+                    data-testid="form_field_selectField__option"
+                    value="mdHome"
+                  >
+                    mdHome
+                  </option>
+                  <option
+                    data-testid="form_field_selectField__option"
+                    value="mdPage"
+                  >
+                    mdPage
+                  </option>
+                  <option
+                    data-testid="form_field_selectField__option"
+                    value="mdProfile"
+                  >
+                    mdProfile
+                  </option>
+                  <option
+                    data-testid="form_field_selectField__option"
+                    value="mdProfileSelector"
+                  >
+                    mdProfileSelector
+                  </option>
+                  <option
+                    data-testid="form_field_selectField__option"
+                    value="mdReset"
+                  >
+                    mdReset
+                  </option>
+                  <option
+                    data-testid="form_field_selectField__option"
+                    value="mdSettings"
+                  >
+                    mdSettings
+                  </option>
+                </select>
+              </div>
+            </fieldset>
+            <button
+              class="sc-iqseJM sc-cTAqQK cwAHbI jlSooL"
+              data-testid="action-form__submit"
+              disabled=""
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+      <div />
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

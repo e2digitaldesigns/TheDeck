@@ -108,7 +108,7 @@ const SubActionParser: React.FC<IntSubActionParser> = ({ action }) => {
       actionText = "";
   }
 
-  return <div>{actionText}</div>;
+  return <div data-testid="sub-action-parser__text">{actionText}</div>;
 };
 
 export default SubActionParser;

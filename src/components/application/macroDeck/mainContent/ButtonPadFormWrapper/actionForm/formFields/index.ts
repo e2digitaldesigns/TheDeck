@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 export { default as FormFieldFile } from "./fileField/fileField";
 export { default as FormFieldKey } from "./keyField/keyField";
 export { default as FormFieldNumbers } from "./numberField/numberField";

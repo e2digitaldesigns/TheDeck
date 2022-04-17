@@ -110,6 +110,35 @@ describe("<ButtonForm/>", () => {
     expect(textColor.value).toBe(value);
   });
 
+  it("Should open Icon Selector", () => {
+    const wrapper = testSetup();
+    const item = wrapper.getByTestId(
+      "button_form__text-field-icon"
+    ) as HTMLInputElement;
+    expect(item).toBeTruthy();
+
+    fireEvent.click(item);
+    fireEvent.click(item);
+    const newAppState = _cloneDeep(mockAppState.appState);
+    newAppState.iconSelector.isVisible = true;
+    expect(mockAppState.setAppState).toHaveBeenCalled();
+    expect(mockAppState.setAppState).toHaveBeenCalledWith(newAppState);
+  });
+
+  it("Should change icon color", () => {
+    mockAppState.appState.active.buttonPadId =
+      mockGlobalState.state.buttonPads[0]._id;
+    const wrapper = testSetup();
+    const bgColor = wrapper.getByTestId(
+      "button_form__icon-color"
+    ) as HTMLInputElement;
+    expect(bgColor).toBeTruthy();
+
+    const value = "#111111";
+    fireEvent.change(bgColor, { target: { value } });
+    expect(bgColor.value).toBe(value);
+  });
+
   it("Should change bg color", () => {
     mockAppState.appState.active.buttonPadId =
       mockGlobalState.state.buttonPads[0]._id;
@@ -133,12 +162,13 @@ describe("<ButtonForm/>", () => {
   });
 
   it("Should use button bgColor", () => {
-    mockGlobalState.state.buttonPads[0].bgColor = "#ffffff";
+    const value = "#ffffff";
+    mockGlobalState.state.buttonPads[0].bgColor = value;
     const wrapper = testSetup();
     const bgColor = wrapper.getByTestId(
       "button_form__bg-color"
     ) as HTMLInputElement;
-    expect(bgColor.value).toBe("#ffffff");
+    expect(bgColor.value).toBe(value);
   });
 
   it("Should have disabled buttons", () => {

@@ -10,41 +10,40 @@ export enum SideBarType {
 }
 export interface IntSideBarProfileBlockHeader {}
 
-const MacroDeckSideBarProfileHeader: React.FC<IntSideBarProfileBlockHeader> =
-  () => {
-    const globalData = useGlobalData();
-    const { createProfile } = useProfile();
-    const data = globalData?.state?.profiles || [];
-    const dataSize = _size(data);
-    const header = "PROFILES";
+const MacroDeckSideBarProfileHeader: React.FC<
+  IntSideBarProfileBlockHeader
+> = () => {
+  const globalData = useGlobalData();
+  const { createProfile } = useProfile();
+  const data = globalData.state.profiles;
+  // const data = globalData?.state?.profiles || [];
+  const dataSize = _size(data);
+  const header = "PROFILES";
 
-    return (
-      <>
-        <Styled.HeaderGrid data-testid="sidebar_header__component">
-          <Styled.ProfileHeader>
-            <Styled.Icon>
-              <FileCopy fontSize="inherit" />
-            </Styled.Icon>
-            <div>
-              {header} (
-              <span data-testid="sidebar-header__profile-count">
-                {dataSize}
-              </span>
-              )
-            </div>
-            <Styled.SuffixIcon>
-              <AddCircleOutline
-                data-testid="sidebar-header__new-profile-button"
-                fontSize="inherit"
-                onClick={createProfile}
-              />
-            </Styled.SuffixIcon>
-          </Styled.ProfileHeader>
+  return (
+    <>
+      <Styled.HeaderGrid data-testid="sidebar_header__component">
+        <Styled.ProfileHeader>
+          <Styled.Icon>
+            <FileCopy fontSize="inherit" />
+          </Styled.Icon>
+          <div>
+            {header} (
+            <span data-testid="sidebar-header__profile-count">{dataSize}</span>)
+          </div>
+          <Styled.SuffixIcon>
+            <AddCircleOutline
+              data-testid="sidebar-header__new-profile-button"
+              fontSize="inherit"
+              onClick={createProfile}
+            />
+          </Styled.SuffixIcon>
+        </Styled.ProfileHeader>
 
-          <div className="profile-search-wrapper"></div>
-        </Styled.HeaderGrid>
-      </>
-    );
-  };
+        <div className="profile-search-wrapper"></div>
+      </Styled.HeaderGrid>
+    </>
+  );
+};
 
 export default MacroDeckSideBarProfileHeader;

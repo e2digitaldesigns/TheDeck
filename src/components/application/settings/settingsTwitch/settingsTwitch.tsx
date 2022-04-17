@@ -12,7 +12,6 @@ const SettingsTwitch: React.FC = () => {
   });
 
   useEffect(() => {
-    console.log(19, globalData?.state?.settings?.features?.twitch);
     setTwitchState(twitchState => ({
       ...twitchState,
       ...globalData?.state?.settings?.features?.twitch

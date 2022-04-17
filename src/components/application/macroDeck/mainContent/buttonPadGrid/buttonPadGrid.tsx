@@ -7,10 +7,17 @@ import * as Styled from "./buttonPadGrid.styles";
 import { buttonMapper } from "./buttonMapper";
 import { useAppData, useGlobalData, useProfile } from "../../../../../hooks";
 import ButtonPadParser from "./buttonPadParser";
-import { ButtonPadNums, IntGlobalData } from "../../../../../types";
+import {
+  ButtonPadGridCopyStateType,
+  ButtonPadNums,
+  IntActions,
+  IntButtonPads,
+  IntGlobalData
+} from "../../../../../types";
 
 const ButtonPadGrid: React.FC<{}> = () => {
-  const [copyState, setCopyState] = useState<any>(undefined);
+  const [copyState, setCopyState] =
+    useState<ButtonPadGridCopyStateType>(undefined);
   const globalData: IntGlobalData = useGlobalData();
   const { appState } = useAppData();
   const buttonPadArray: number[] = _range(1, ButtonPadNums.bpn32 + 1);
@@ -30,11 +37,11 @@ const ButtonPadGrid: React.FC<{}> = () => {
     return data;
   };
 
-  const handleButtonCopy = (buttonPad: any) => {
+  const handleButtonCopy = (buttonPad: IntButtonPads) => {
     const state = _cloneDeep(globalData.state);
     const actions = _filter(
       state.actions,
-      (f: any) => f.buttonPadId === buttonPad._id
+      (f: IntActions) => f.buttonPadId === buttonPad._id
     );
 
     setCopyState({

@@ -30,12 +30,12 @@ export interface IntObsSceneDataScenes {
 // }
 
 export interface IntObsScenesResponse {
-  "current-scene"?: any;
-  currentScene?: any;
-  "message-id"?: any;
-  messageId?: any;
-  scenes?: any[];
-  status?: any;
+  "current-scene"?: unknown;
+  currentScene?: unknown;
+  "message-id"?: unknown;
+  messageId?: unknown;
+  scenes?: unknown[];
+  status?: unknown;
 }
 
 export interface IntObsSource {

@@ -10,6 +10,18 @@ export interface IntTemplateInformation {
 export interface IntSettings {
   ipAddress: string;
   port: string;
+  features: {
+    obs: {
+      status: boolean;
+      ipAddress: string;
+      port: string;
+      password: string;
+    };
+    twitch: {
+      status: boolean;
+      channel: string;
+    };
+  };
 }
 
 export interface IntIdIndex {
@@ -95,7 +107,7 @@ export interface IntGlobalContextCheckers {
 
 export interface IntGlobalContextStateInterface {
   state: IntGlobalContextInterface;
-  setState: React.Dispatch<React.SetStateAction<any>>;
+  setState: React.Dispatch<React.SetStateAction<IntGlobalContextInterface>>;
 }
 
 export type IntGlobalData = IntGlobalContextStateInterface;

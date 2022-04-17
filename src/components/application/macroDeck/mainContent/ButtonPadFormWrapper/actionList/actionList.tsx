@@ -21,7 +21,10 @@ const ActionList: React.FC<{}> = () => {
     createAction();
   };
 
-  const handleDeleteAction = (e: any, _id: string): void => {
+  const handleDeleteAction = (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+    _id: string
+  ): void => {
     e.stopPropagation();
     deleteAction(_id);
   };
@@ -36,6 +39,7 @@ const ActionList: React.FC<{}> = () => {
                 actions,
                 (m: IntActions): React.ReactElement => (
                   <Styled.ActionListItem
+                    data-testid="action-list__action-item-activate"
                     isActive={m._id === actionId}
                     key={m._id}
                     onClick={() => handleSelectActionSet(m._id)}
@@ -47,6 +51,7 @@ const ActionList: React.FC<{}> = () => {
                     </Styled.ActionListItemInfo>
 
                     <Styled.ActionListItemButton
+                      data-testid="action-list__action-item-delete"
                       onClick={e => handleDeleteAction(e, m._id)}
                     >
                       <Delete fontSize="inherit" />
@@ -59,8 +64,9 @@ const ActionList: React.FC<{}> = () => {
       </Styled.ActionListWrapper>
 
       <Styled.ActionListButton
-        onClick={handleCreateAction}
+        data-testid="action-list__action-item-new"
         disabled={!appState?.active?.buttonPadId}
+        onClick={handleCreateAction}
       >
         New Action
       </Styled.ActionListButton>

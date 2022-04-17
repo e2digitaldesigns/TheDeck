@@ -1,5 +1,5 @@
 import React from "react";
-import * as Icon from "react-feather";
+import * as RFIcon from "react-feather";
 import _find from "lodash/find";
 import _startsWith from "lodash/startsWith";
 import * as Styed from "./icons.style";
@@ -17,15 +17,16 @@ const Iconic: React.FC<IntIconProps> = ({
 }): React.ReactElement => {
   if (_startsWith(icon, "md-icon-alpha-")) {
     return (
-      <Styed.MdIcon color={color}>
+      <Styed.MdIcon color={color} data-testid={`icon-${icon}`}>
         {icon.split("md-icon-alpha-")[1]}
       </Styed.MdIcon>
     );
   }
 
-  const defaultIcon = Icon.Home;
+  const defaultIcon = RFIcon.Home;
+
   const TheIcon =
-    _find(Icon, (f: any) => f.displayName === icon) || defaultIcon;
+    _find(RFIcon, (f: RFIcon.Icon) => f.displayName === icon) || defaultIcon;
 
   return (
     <TheIcon

@@ -32,7 +32,16 @@ const mockHooks = {
   useGlobalData: mockGlobalState,
   activateButtonPad: jest.fn(),
   createButtonPad: jest.fn(),
-  copyState: { copyState: "copyState" },
+  copyState: {
+    buttonPad: {
+      bgColor: "buttonPad.bgColor",
+      icon: "buttonPad.icon",
+      iconColor: "buttonPad.iconColor",
+      text: "buttonPad.text",
+      textColor: "buttonPad.textColor"
+    },
+    actions: []
+  },
   deleteButtonPad: jest.fn(),
   handleButtonCopy: jest.fn(),
   pasteButtonPad: jest.fn(),
@@ -134,6 +143,7 @@ describe("<ButtonPadParser/> Drag & Drop", () => {
     fireEvent.dragStart(buttonPad);
     newDropZoneState.dropZones.buttonPads = true;
     newDropZoneState.dropZones.styleHeader = true;
+
     expect(mockDropZoneState.setDropZoneState).toHaveBeenCalledTimes(1);
     expect(mockDropZoneState.setDropZoneState).toHaveBeenCalledWith(
       newDropZoneState

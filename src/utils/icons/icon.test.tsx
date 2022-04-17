@@ -40,4 +40,13 @@ describe("<Iconic/>", () => {
     const svg = component.getByTestId(`icon-Home`);
     expect(svg).toBeTruthy();
   });
+
+  it("Should show letter icon)", () => {
+    const props: IntIconProps = {
+      icon: "md-icon-alpha-B"
+    };
+    const component = setup(props);
+    const svg = component.getByTestId(`icon-md-icon-alpha-B`);
+    expect(svg).toBeTruthy();
+  });
 });

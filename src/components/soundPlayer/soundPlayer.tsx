@@ -1,45 +1,30 @@
 import React, { useEffect } from "react";
 import { window } from "../../hooks/useElectronHook/window";
 import { IpcRendererTypes } from "../../types";
+import { MDAudio, MDHTMLAudioElement } from "./MDAudio";
 const ipcRenderer = window?.electron?.ipcRenderer || null;
 
-class MDAudio extends Audio {
-  stop() {
-    this.pause();
-    this.currentTime = 0;
-  }
-}
+export const playMethod = (e: object, data: string) => {
+  const audioObj: MDHTMLAudioElement = new MDAudio(data);
 
-interface MDHTMLAudioElement extends HTMLAudioElement {
-  stop: () => void;
-}
+  audioObj.addEventListener("canplaythrough", () => {
+    audioObj.play();
+  });
+};
 
 const SoundPlayer: React.FC = () => {
-  const audioObj: MDHTMLAudioElement = new MDAudio();
-
   useEffect(() => {
-    if (ipcRenderer) {
-      ipcRenderer.on(
-        IpcRendererTypes.mdPlaySound,
-        (e: object, data: string) => {
-          audioObj.src = data;
-          console.log(26, data);
-
-          audioObj.addEventListener("canplaythrough", () => {
-            audioObj.play();
-          });
-        }
-      );
-    }
+    ipcRenderer && ipcRenderer.on(IpcRendererTypes.mdPlaySound, playMethod);
 
     return () => {
-      ipcRenderer.removeAllListeners(IpcRendererTypes.mdPlaySound);
+      ipcRenderer &&
+        ipcRenderer.removeListener(IpcRendererTypes.mdPlaySound, playMethod);
     };
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return <div />;
+  return <div data-testid="sound_player" />;
 };
 
 export default SoundPlayer;

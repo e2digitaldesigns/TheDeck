@@ -27,7 +27,7 @@ const IconSelector: React.FC<IntIconSelectorProps> = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [appState.active.buttonPadId]);
 
-  const handleOnchange = (e: any) => {
+  const handleOnchange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFilter(e.target.value);
   };
 
@@ -56,6 +56,7 @@ const IconSelector: React.FC<IntIconSelectorProps> = ({
       <Styled.IconListSearchWrapper>
         <Styled.IconListSearchField
           autoFocus={true}
+          data-testid="icon-selector__search-field"
           onChange={e => handleOnchange(e)}
           value={filter}
         />
@@ -63,12 +64,16 @@ const IconSelector: React.FC<IntIconSelectorProps> = ({
 
       <Styled.IconListWrapperScroll>
         <Styled.IconGrid>
-          <Styled.IconItem onClick={() => handleCloseIconSelector("")}>
+          <Styled.IconItem
+            data-testid="icon-selector__none"
+            onClick={() => handleCloseIconSelector("")}
+          >
             None
           </Styled.IconItem>
 
           {_map(filterIcons(ICONS), (m: any) => (
             <Styled.IconItem
+              data-testid="icon-selector__icons"
               key={m._id}
               onClick={() => handleCloseIconSelector(m.name)}
             >
@@ -77,7 +82,10 @@ const IconSelector: React.FC<IntIconSelectorProps> = ({
           ))}
         </Styled.IconGrid>
       </Styled.IconListWrapperScroll>
-      <Styled.CloseButton onClick={() => handleCloseIconSelector()}>
+      <Styled.CloseButton
+        data-testid="icon-selector__close"
+        onClick={() => handleCloseIconSelector()}
+      >
         Close
       </Styled.CloseButton>
     </Styled.IconListWrapper>

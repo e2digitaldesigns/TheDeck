@@ -24,7 +24,6 @@ export const ButtonPadInner = styled.div<ButtonPadInnerType>`
         ? colorParser(props.bgColor) || props.theme.colors.accent1
         : "transparent"};
 
-  border: ${props => props?.dropZone && "0px dashed #aaaaaa"};
   background-color: ${props => props.bgColor};
 
   div:nth-child(n + 1):nth-child(-n + 4) {

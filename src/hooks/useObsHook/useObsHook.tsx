@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import OBSWebSocket from "obs-websocket-js";
 import { IntObsScene, IntObsSource } from "../../types";
 import _map from "lodash/map";

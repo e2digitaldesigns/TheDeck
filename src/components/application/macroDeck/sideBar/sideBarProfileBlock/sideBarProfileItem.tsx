@@ -15,7 +15,31 @@ const SideBarProfileItem: React.FC<IntSideBarProfileItem> = ({ profile }) => {
   const globalData = useGlobalData();
   const { appState } = useAppData();
   const { activateProfile, deleteProfile } = useProfile();
-  const profileItemRef = useRef<HTMLDivElement>(null);
+  const profileItemRef = useRef<any>(null);
+
+  useEffect(() => {
+    const handleDragStart = (e: React.DragEvent<HTMLDivElement>): void => {
+      console.log(22, "handleDragStart FFF");
+      e.dataTransfer.setData("dndAction", "sideBarProfileSort");
+      e.dataTransfer.setData("dragId", profile._id);
+    };
+
+    const handleDragEnd = (e: React.DragEvent<HTMLDivElement>): void => {
+      console.log(28, "handleDragEnd AAA");
+    };
+
+    profileItemRef?.current?.addEventListener("dragstart", handleDragStart);
+    profileItemRef?.current?.addEventListener("dragend", handleDragEnd);
+
+    return () => {
+      profileItemRef?.current?.removeEventListener(
+        "dragstart",
+        handleDragStart
+      );
+
+      profileItemRef?.current?.removeEventListener("dragend", handleDragEnd);
+    };
+  }, [profileItemRef, profile._id]);
 
   const handleProfileActivate = (
     event: React.FormEvent<HTMLDivElement>
@@ -31,28 +55,26 @@ const SideBarProfileItem: React.FC<IntSideBarProfileItem> = ({ profile }) => {
     profile?._id && deleteProfile(profile?._id);
   };
 
-  useEffect(() => {
-    const handleDragStart = (e: any) => {
-      e.dataTransfer.setData("dndAction", "sideBarProfileSort");
-      e.dataTransfer.setData("dragId", profile._id);
-    };
-
-    profileItemRef?.current?.addEventListener("dragstart", handleDragStart);
-  }, [profileItemRef, profile._id]);
-
-  const allowDrop = (e: any) => {
+  const allowDrop = (e: React.DragEvent<HTMLDivElement>): void => {
     e.preventDefault();
   };
 
-  const handleDrop = async (e: any, _id: string) => {
+  const handleDrop = async (
+    e: React.DragEvent<HTMLDivElement>,
+    _id: string
+  ) => {
+    console.log(52, "handleDrop XXX");
     const dragId = e.dataTransfer.getData("dragId");
 
     const newState = _cloneDeep(globalData.state);
     const dragIndex = _findIndex(
       newState.profiles,
-      (f: any) => f._id === dragId
+      (f: IntProfile) => f._id === dragId
     );
-    const dropIndex = _findIndex(newState.profiles, (f: any) => f._id === _id);
+    const dropIndex = _findIndex(
+      newState.profiles,
+      (f: IntProfile) => f._id === _id
+    );
     const dragProfile = newState.profiles[dragIndex];
 
     if (dragIndex > dropIndex) {
@@ -74,7 +96,7 @@ const SideBarProfileItem: React.FC<IntSideBarProfileItem> = ({ profile }) => {
       data-testid="side_bar_item__component"
       draggable={true}
       onClick={handleProfileActivate}
-      onDragOver={e => allowDrop(e)}
+      onDragOver={allowDrop}
       onDrop={e => handleDrop(e, profile._id)}
       ref={profileItemRef}
     >

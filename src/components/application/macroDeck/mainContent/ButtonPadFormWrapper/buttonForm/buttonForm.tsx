@@ -9,6 +9,7 @@ import _truncate from "lodash/truncate";
 import * as Styled from "./buttonForm.styles";
 import IconSelector from "./iconSelector/iconSelector";
 import ButtonFormButtons from "./buttonFormButtons";
+import { IntButtonPads } from "../../../../../../types";
 
 export interface IntButtonForm {}
 
@@ -17,14 +18,14 @@ const ButtonForm: React.FC<IntButtonForm> = () => {
   const { appState, setAppState } = useAppData();
   const { getActiveButton, getActiveButtonIndex, updateButtonPad } =
     useButton();
-  const defaultButtonPad = SETTINGS.DEFAULT_STATE.BUTTON_PADS;
+  const defaultButtonPad: IntButtonPads = SETTINGS.DEFAULT_STATE.BUTTON_PADS;
   const buttonPad = getActiveButton() || defaultButtonPad;
   const buttonPadIndex = getActiveButtonIndex();
   const [state, setState] = useState(defaultButtonPad);
   const isIconSelectVisible = appState.iconSelector.isVisible;
   const isDisabled = !appState?.active?.buttonPadId;
 
-  const defaultButtonPadElements = {
+  const defaultButtonPadElements: Partial<IntButtonPads> = {
     textColor: defaultButtonPad.textColor,
     iconColor: defaultButtonPad.iconColor,
     bgColor: defaultButtonPad.bgColor
@@ -125,6 +126,7 @@ const ButtonForm: React.FC<IntButtonForm> = () => {
             )}
 
             <input
+              data-testid="button_form__icon-color"
               disabled={isDisabled}
               name="iconColor"
               onChange={e => handleFormChange(e)}

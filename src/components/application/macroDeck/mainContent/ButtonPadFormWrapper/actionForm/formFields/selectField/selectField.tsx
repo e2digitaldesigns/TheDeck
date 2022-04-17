@@ -41,7 +41,7 @@ const subActionMap: subActionMapProps = {
 
 export interface IntFormFieldSelectProps {
   name: string;
-  onChange: (e: any) => void;
+  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
   subAction: string;
 }
 

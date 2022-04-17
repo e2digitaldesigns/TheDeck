@@ -21,16 +21,14 @@ const FormFieldFile: React.FC<IntFormFieldFileProps> = ({
       ? SETTINGS.FILE_TYPES.SOUND
       : SETTINGS.FILE_TYPES.ALL;
 
-  console.log(27, { acceptedFiles });
-
   return (
     <>
       <div>
-        <label data-testid="fileField__label" htmlFor={name}>
+        <label data-testid="form_field_fileField__label" htmlFor={name}>
           {_upperFirst(name)}:
         </label>
         <input
-          data-testid="fileField__input"
+          data-testid="form_field_fileField__input"
           id={id}
           type="file"
           onChange={() => onChange(id)}

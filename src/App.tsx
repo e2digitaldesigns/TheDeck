@@ -21,6 +21,8 @@ import {
 } from "./hooks/useDropZoneHook/dropZoneContext";
 
 import {
+  IntAppContextInterface,
+  IntDragAndDropInterface,
   IntGlobalContextCheckers,
   IntGlobalContextInterface,
   IpcRendererTypes
@@ -45,7 +47,7 @@ const App: React.FC = () => {
     [state, setState]
   );
 
-  const [appState, setAppState] = useState<any>({
+  const [appState, setAppState] = useState<IntAppContextInterface>({
     ...appDefaultState
   });
 
@@ -54,7 +56,7 @@ const App: React.FC = () => {
     [appState, setAppState]
   );
 
-  const [dropZoneState, setDropZoneState] = useState<any>({
+  const [dropZoneState, setDropZoneState] = useState<IntDragAndDropInterface>({
     ...dropZoneDefaultState
   });
 
@@ -82,7 +84,7 @@ const App: React.FC = () => {
     ipcRenderer &&
       ipcRenderer.on(
         IpcRendererTypes.databaseReturn,
-        (e: any, data: IntGlobalContextInterface) => {
+        (e: unknown, data: IntGlobalContextInterface) => {
           if (typeof data === "object" && stillHere) {
             setState(data);
             setIsLoaded(isLoaded => true);

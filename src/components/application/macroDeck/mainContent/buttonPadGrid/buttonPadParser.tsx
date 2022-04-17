@@ -1,9 +1,11 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, ReactElement } from "react";
 import { useAppData, useButton, useDropZone } from "../../../../../hooks";
 import {
+  ButtonPadGridCopyStateType,
   DragAndDropDataTypes,
   DragAndDropOptions,
-  IntAppData
+  IntAppData,
+  IntButtonPads
 } from "../../../../../types";
 import { AddBox, Delete, Edit, FileCopy, Restore } from "@material-ui/icons";
 import Iconic from "../../../../../utils/icons/icons";
@@ -12,8 +14,8 @@ import _cloneDeep from "lodash/cloneDeep";
 
 export interface ButtonPadParserProps {
   padNumber: number;
-  handleButtonCopy: any;
-  copyState: any;
+  handleButtonCopy: (buttonPad: IntButtonPads) => void;
+  copyState: ButtonPadGridCopyStateType;
 }
 
 const ButtonPadParser: React.FC<ButtonPadParserProps> = ({
@@ -36,35 +38,36 @@ const ButtonPadParser: React.FC<ButtonPadParserProps> = ({
   } = useButton();
   const buttonPad = readButtonPad(padNumber);
   const activeButtonPadId = appData.appState.active.buttonPadId;
-  const buttonPadRef = useRef<HTMLDivElement>(null);
+  const buttonPadRef = useRef<any>(null);
 
   useEffect(() => {
-    const handleDragStart = (e: any) => {
+    const handleDragStart = (event: React.DragEvent<HTMLDivElement>) => {
       const dropZoneStateClone = _cloneDeep(dropZoneState);
-      // console.log(51, dropZoneStateClone);
       dropZoneStateClone.dropZones.buttonPads = true;
       dropZoneStateClone.dropZones.styleHeader = true;
       setDropZoneState(dropZoneStateClone);
 
-      if (e?.dataTransfer?.setData) {
-        const dndAction = e.ctrlKey
+      if (event?.dataTransfer?.setData) {
+        const dndAction = event.ctrlKey
           ? DragAndDropOptions.CopyButtonPad
           : DragAndDropOptions.SwapButtonPad;
 
-        e.dataTransfer.setData(DragAndDropDataTypes.Action, dndAction);
+        event.dataTransfer.setData(DragAndDropDataTypes.Action, dndAction);
 
-        e.dataTransfer.setData(
+        event.dataTransfer.setData(
           DragAndDropDataTypes.PageId,
           appData?.appState?.active?.pageId
         );
 
-        e.dataTransfer.setData(DragAndDropDataTypes.OriginPadNumber, padNumber);
+        event.dataTransfer.setData(
+          DragAndDropDataTypes.OriginPadNumber,
+          padNumber.toString()
+        );
       }
     };
 
     const handleDragEnd = () => {
       const dropZoneStateClone = _cloneDeep(dropZoneState);
-      // console.log(87, dropZoneStateClone);
       dropZoneStateClone.dropZones.buttonPads = false;
       dropZoneStateClone.dropZones.styleHeader = false;
       setDropZoneState(dropZoneStateClone);
@@ -86,8 +89,6 @@ const ButtonPadParser: React.FC<ButtonPadParserProps> = ({
   const handleDrop = async (ev: any, destinationPadNumber: number) => {
     setIsdragOver(false);
     const dndAction = ev.dataTransfer.getData(DragAndDropDataTypes.Action);
-    console.log(89, { dndAction, destinationPadNumber });
-    // return;
 
     switch (dndAction) {
       case DragAndDropOptions.StyleButtonPad:
@@ -122,17 +123,17 @@ const ButtonPadParser: React.FC<ButtonPadParserProps> = ({
     }
   };
 
-  const handleDragOver = (e: any) => {
+  const handleDragOver = (e: React.DragEvent<HTMLDivElement>): void => {
     e.preventDefault();
     setIsdragOver(true);
   };
 
-  const handleDragLeave = (e: any) => {
+  const handleDragLeave = (e: React.DragEvent<HTMLDivElement>): void => {
     e.preventDefault();
     setIsdragOver(false);
   };
 
-  const handleButtonCreate = (e: React.MouseEvent<HTMLElement>) => {
+  const handleButtonCreate = (e: React.DragEvent<HTMLDivElement>): void => {
     e.stopPropagation();
     createButtonPad(padNumber);
   };
@@ -147,7 +148,7 @@ const ButtonPadParser: React.FC<ButtonPadParserProps> = ({
     buttonPad && deleteButtonPad(buttonPad._id);
   };
 
-  const handlePasteToButton = () => {
+  const handlePasteToButton = (): void => {
     pasteButtonPad(buttonPad, copyState);
   };
 
@@ -210,7 +211,10 @@ const ButtonPadParser: React.FC<ButtonPadParserProps> = ({
             )}
           </Styled.ButtonPadIcon>
 
-          <Styled.ButtonPadText color={buttonPad?.textColor}>
+          <Styled.ButtonPadText
+            color={buttonPad?.textColor}
+            data-testid="button_pad_parser__text"
+          >
             {isDragOver ? "Drop Here" : buttonPad?.text}
           </Styled.ButtonPadText>
         </>

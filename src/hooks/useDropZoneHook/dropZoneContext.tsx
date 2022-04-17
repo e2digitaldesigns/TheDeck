@@ -1,6 +1,7 @@
 import { createContext } from "react";
+import { IntDragAndDropData, IntDragAndDropInterface } from "../../types";
 
-export const dropZoneDefaultState: any = {
+export const dropZoneDefaultState: IntDragAndDropInterface = {
   iconSelector: {
     isVisible: false,
     icon: ""
@@ -14,7 +15,7 @@ export const dropZoneDefaultState: any = {
   }
 };
 
-export const DropZoneContext = createContext<any>({
+export const DropZoneContext = createContext<IntDragAndDropData>({
   dropZoneState: dropZoneDefaultState,
   setDropZoneState: (): void => {}
 });

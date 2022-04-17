@@ -13,3 +13,30 @@ export enum DragAndDropDataTypes {
   StyleId = "DragAndDropStyleId",
   OriginPadNumber = "DragAndDropOriginPadNumber"
 }
+
+interface IntIconSelector {
+  isVisible: boolean;
+  icon: string;
+}
+
+interface IntDropZones {
+  actionList: boolean;
+  buttonPads: boolean;
+  sideBarProfiles: boolean;
+  sideBarStyles: boolean;
+  styleHeader: boolean;
+}
+
+export interface IntDragAndDropInterface {
+  iconSelector: IntIconSelector;
+  dropZones: IntDropZones;
+}
+
+export interface IntIntDragAndDropContextStateInterface {
+  dropZoneState: IntDragAndDropInterface;
+  setDropZoneState: React.Dispatch<
+    React.SetStateAction<IntDragAndDropInterface>
+  >;
+}
+
+export type IntDragAndDropData = IntIntDragAndDropContextStateInterface;
