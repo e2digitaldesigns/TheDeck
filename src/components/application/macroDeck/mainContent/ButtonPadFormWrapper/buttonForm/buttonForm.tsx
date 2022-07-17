@@ -94,6 +94,7 @@ const ButtonForm: React.FC<IntButtonForm> = () => {
               disabled={isDisabled}
               name="text"
               onChange={e => handleFormChange(e)}
+              placeholder="Button Text"
               type="text"
               value={state.text}
             />
@@ -110,6 +111,7 @@ const ButtonForm: React.FC<IntButtonForm> = () => {
 
           <div>
             <label htmlFor="icon">Icon:</label>
+
             <IconSelector
               handleSelectIcon={handleSelectIcon}
               isVisible={isIconSelectVisible}
@@ -117,6 +119,7 @@ const ButtonForm: React.FC<IntButtonForm> = () => {
 
             {!isIconSelectVisible && (
               <Styled.ButtonFormTextField
+                disabled={isDisabled}
                 data-testid="button_form__text-field-icon"
                 onClick={handleOpenIconSelector}
                 readOnly

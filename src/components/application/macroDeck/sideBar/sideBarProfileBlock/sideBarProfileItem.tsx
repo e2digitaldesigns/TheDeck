@@ -31,14 +31,14 @@ const SideBarProfileItem: React.FC<IntSideBarProfileItem> = ({ profile }) => {
     profileItemRef?.current?.addEventListener("dragstart", handleDragStart);
     profileItemRef?.current?.addEventListener("dragend", handleDragEnd);
 
-    return () => {
-      profileItemRef?.current?.removeEventListener(
-        "dragstart",
-        handleDragStart
-      );
+    // return () => {
+    //   profileItemRef?.current?.removeEventListener(
+    //     "dragstart",
+    //     handleDragStart
+    //   );
 
-      profileItemRef?.current?.removeEventListener("dragend", handleDragEnd);
-    };
+    //   profileItemRef?.current?.removeEventListener("dragend", handleDragEnd);
+    // };
   }, [profileItemRef, profile._id]);
 
   const handleProfileActivate = (

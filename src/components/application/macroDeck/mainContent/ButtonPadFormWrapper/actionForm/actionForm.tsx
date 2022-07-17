@@ -45,7 +45,6 @@ const ActionForms: React.FC<{}> = () => {
       setState(state => ({ ...SETTINGS.DEFAULT_STATE.ACTIONS }));
     } else {
       const action = getAction(actionId);
-      console.log(48, action);
       if (action) setState({ ...action });
     }
     // eslint-disable-next-line
@@ -141,6 +140,7 @@ const ActionForms: React.FC<{}> = () => {
 
         {state?.action && (
           <ActionParser
+            isDisabled={disabled}
             handleFilePathChange={handleFilePathChange}
             handleFormChange={handleFormChange}
             handleKeyFieldChange={handleKeyFieldChange}

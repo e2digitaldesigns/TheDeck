@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { FormFieldFileTypes, IntActions } from "../../../../../../types";
 
@@ -20,6 +20,7 @@ interface IntActionparser {
       | React.ChangeEvent<HTMLTextAreaElement>
   ) => void;
   handleKeyFieldChange: (text: string) => void;
+  isDisabled?: boolean;
   state: IntActions;
 }
 
@@ -31,6 +32,7 @@ const ActionParser: React.FC<IntActionparser> = ({
   handleFilePathChange,
   handleFormChange,
   handleKeyFieldChange,
+  isDisabled,
   state
 }) => {
   const actionMap: actionMapProps = {
@@ -78,6 +80,7 @@ const ActionParser: React.FC<IntActionparser> = ({
     md: (
       <FormFieldSelect
         data-testid="action-parser__md"
+        isDisabled={isDisabled}
         name="md"
         onChange={handleFormChange}
         subAction={state.subAction}
@@ -86,6 +89,7 @@ const ActionParser: React.FC<IntActionparser> = ({
     obs: (
       <FormFieldSelect
         data-testid="action-parser__obs"
+        isDisabled={isDisabled}
         name="obs"
         onChange={handleFormChange}
         subAction={state.subAction}
@@ -93,6 +97,7 @@ const ActionParser: React.FC<IntActionparser> = ({
     ),
     spotify: (
       <FormFieldSelect
+        isDisabled={isDisabled}
         name="spotify"
         onChange={handleFormChange}
         subAction={state.subAction}
