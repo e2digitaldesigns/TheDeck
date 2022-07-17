@@ -6,6 +6,13 @@
   "private": true,
   "main": "./electron/main.js",
   "homepage": "./",
+  "config": {
+    "forge": {
+      "electronRebuildConfig": {
+        "forceABI": 101
+      }
+    }
+  },
   "build": {
     "asar": true,
     "extends": null,
@@ -55,7 +62,6 @@
     "file-saver": "^2.0.5",
     "ip-address": "^8.1.0",
     "lodash": "^4.17.21",
-    "node-abi": "^3.8.0",
     "npm-run-all": "^4.1.5",
     "obs-websocket-js": "^4.0.3",
     "ping": "^0.4.1",
@@ -66,7 +72,6 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "^5.0.0",
     "react-toastify": "^8.1.0",
-    "robotjs": "^0.6.0",
     "socket.io": "^4.4.1",
     "styled-components": "^5.3.3",
     "time-stamp": "^2.2.0",
@@ -84,7 +89,7 @@
     "eject": "react-scripts eject",
     "pack": "electron-builder --dir",
     "postinstall": "electron-builder install-app-deps",
-    "rebuild": "npm rebuild --runtime=electron --target=17.0.1 --disturl=https://atom.io/download/atom-shell --abi=102",
+    "rebuild": "npm rebuild --runtime=electron --target=17.0.1 --disturl=https://atom.io/download/atom-shell --force-abi=101",
     "rebuilder": ".\\node_modules\\.bin\\electron-rebuild.cmd",
     "rebuildRobot": "electron-rebuild -f -w robotjs",
     "start": "react-scripts start .",
@@ -105,7 +110,7 @@
     ],
     "development": [
       "last 1 chrome version",
-      "last 1 firefox version",
+      "last 1 fire x version",
       "last 1 safari version"
     ]
   },
@@ -124,7 +129,8 @@
     "concurrently": "^7.0.0",
     "electron": "^17.0.1",
     "electron-builder": "^22.14.5",
-    "electron-rebuild": "^3.2.7",
-    "node-sass": "^7.0.1"
+    "electron-rebuild": "^3.2.8",
+    "node-sass": "^7.0.1",
+    "prebuild-install": "^7.1.1"
   }
 }

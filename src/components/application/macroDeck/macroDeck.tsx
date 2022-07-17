@@ -12,7 +12,7 @@ const MacroDeck: React.FC<{}> = () => {
   const { activateProfile } = useProfile();
 
   useEffect(() => {
-    if (!appState.active?.profileId && state.profiles?.[0]._id) {
+    if (!appState.active?.profileId && state.profiles?.[0]?._id) {
       activateProfile(state.profiles[0]._id);
     }
     // eslint-disable-next-line

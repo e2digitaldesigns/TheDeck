@@ -28,10 +28,7 @@ jobs:
       - name: Electron Rebuild
         run: npm run rebuild
 
-      - name: Electron Rebuilder
-        run: npm run rebuildRobot
-
-      - name: Build/release Electron app
+      - name: Build Release Electron App
         uses: samuelmeuli/action-electron-builder@v1.6.0
         with:
           # GitHub token, automatically provided to the action

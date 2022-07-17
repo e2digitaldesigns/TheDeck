@@ -3,7 +3,7 @@ const _filter = require("lodash/filter");
 const _findIndex = require("lodash/findIndex");
 const _sortBy = require("lodash/sortBy");
 const axios = require("axios");
-const robot = require("robotjs");
+// const robot = require("robotjs");
 const storage = require("electron-json-storage");
 const OBSWebSocket = require("obs-websocket-js");
 
@@ -43,7 +43,7 @@ class ActionClass {
 
   async keyTap() {
     return new Promise(resolve => {
-      robot.keyTap(this.action.text);
+      // robot.keyTap(this.action.text);
       resolve();
     });
   }

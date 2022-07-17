@@ -788,8 +788,9 @@ Object {
                       data-testid="button_form__text-field-text"
                       disabled=""
                       name="text"
+                      placeholder="Button Text"
                       type="text"
-                      value="ButtonPad"
+                      value=""
                     />
                     <input
                       data-testid="button_form__text-field-text-color"
@@ -808,9 +809,10 @@ Object {
                     <input
                       class="sc-jrQzAO sc-gSQFLo QuLDf irQcTs"
                       data-testid="button_form__text-field-icon"
+                      disabled=""
                       readonly=""
                       type="text"
-                      value="Image"
+                      value="None"
                     />
                     <input
                       data-testid="button_form__icon-color"
@@ -1788,8 +1790,9 @@ Object {
                     data-testid="button_form__text-field-text"
                     disabled=""
                     name="text"
+                    placeholder="Button Text"
                     type="text"
-                    value="ButtonPad"
+                    value=""
                   />
                   <input
                     data-testid="button_form__text-field-text-color"
@@ -1808,9 +1811,10 @@ Object {
                   <input
                     class="sc-jrQzAO sc-gSQFLo QuLDf irQcTs"
                     data-testid="button_form__text-field-icon"
+                    disabled=""
                     readonly=""
                     type="text"
-                    value="Image"
+                    value="None"
                   />
                   <input
                     data-testid="button_form__icon-color"

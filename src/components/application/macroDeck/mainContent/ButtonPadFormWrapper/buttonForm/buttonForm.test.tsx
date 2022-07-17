@@ -111,13 +111,14 @@ describe("<ButtonForm/>", () => {
   });
 
   it("Should open Icon Selector", () => {
+    mockAppState.appState.active.buttonPadId =
+      mockGlobalState.state.buttonPads[0]._id;
     const wrapper = testSetup();
     const item = wrapper.getByTestId(
       "button_form__text-field-icon"
     ) as HTMLInputElement;
     expect(item).toBeTruthy();
 
-    fireEvent.click(item);
     fireEvent.click(item);
     const newAppState = _cloneDeep(mockAppState.appState);
     newAppState.iconSelector.isVisible = true;

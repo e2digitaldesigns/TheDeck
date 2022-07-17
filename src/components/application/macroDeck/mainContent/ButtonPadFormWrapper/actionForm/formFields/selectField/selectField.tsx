@@ -43,12 +43,14 @@ export interface IntFormFieldSelectProps {
   name: string;
   onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
   subAction: string;
+  isDisabled?: boolean;
 }
 
 const FormFieldSelect: React.FC<IntFormFieldSelectProps> = ({
   name,
   onChange,
-  subAction
+  subAction,
+  isDisabled = false
 }) => {
   return (
     <>
@@ -59,6 +61,7 @@ const FormFieldSelect: React.FC<IntFormFieldSelectProps> = ({
 
         <SelectField
           data-testid="form_field_selectField__input"
+          disabled={isDisabled}
           name="subAction"
           onChange={e => onChange(e)}
           value={subAction}
