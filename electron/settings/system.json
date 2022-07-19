@@ -2,7 +2,7 @@
   "APPLICATION": {
     "NAME": "MacroDeck",
     "SIZE": { "WIDTH": 1280, "HEIGHT": 785 },
-    "COLORS": { "BG": "#1e1e1e" }
+    "COLORS": { "BG": "#ccc" }
   },
   "DEFAULT_PORT": "8585",
   "LOAD_URL": {
