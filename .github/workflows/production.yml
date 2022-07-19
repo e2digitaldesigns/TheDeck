@@ -28,7 +28,7 @@ jobs:
       - name: Electron Rebuild
         run: npm run rebuild
 
-      - name: Sam Electron Builder
+      - name: Sam Electron Builder s
         uses: samuelmeuli/action-electron-builder@v1.6.0
 
         with:
