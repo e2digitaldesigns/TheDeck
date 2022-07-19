@@ -84,7 +84,7 @@
     "eject": "react-scripts eject",
     "pack": "electron-builder --dir",
     "postinstall": "electron-builder install-app-deps",
-    "rebuild": "npm rebuild --runtime=electron --target=17.0.1 --disturl=https://atom.io/download/atom-shell --abi=102",
+    "rebuild": "npm rebuild --runtime=electron --target=17.0.1 --disturl=https://atom.io/download/atom-shell --abi=101",
     "rebuilder": ".\\node_modules\\.bin\\electron-rebuild.cmd",
     "rebuildRobot": "electron-rebuild -f -w robotjs",
     "start": "react-scripts start .",
